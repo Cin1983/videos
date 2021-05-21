@@ -3,15 +3,20 @@ import React from "react";
 class Searchbar extends React.Component {
     state = { myInput: '' };
 
-     onInputChange = () => {
-    
-}
+     onInputChange = e => {
+         this.setState({ myInput: e.target.value });
+    }
+
+    onFormSubmit = e => {
+        e.preventDefault();
+    }
+
 
   render() {
     return (
         <div className=" search-bar ui segment">
             
-        <form className="ui form">
+            <form onSubmit={this.onFormSubmit }className="ui form">
                 <div className="ui fluid action input">
                    
                     <input type="text"

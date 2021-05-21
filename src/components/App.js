@@ -6,9 +6,7 @@ import VideoItem from "./VideoItem";
 import VideoList from "./VideoList";
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  // }
+
   render() {
     return (
       <div className="ui container">
