@@ -1,12 +1,7 @@
-import React from 'react'
+import React from "react";
 
-class VideoItem extends React.Component{
-    // constructor(props) {
-    //     super(props)
-    // }
-    render() {
-        return(<div>Ah ik ben best moe</div>)
-    }
-}
+const VideoItem = ({ video }) => {
+    return <div>{video.snippet.title}</div>;
+};
 
-export default VideoItem
+export default VideoItem;
