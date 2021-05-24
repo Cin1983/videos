@@ -7,8 +7,6 @@ const VideoDetail = ({ video }) => {
 
     const videoSrc = `https://youtube.com/embed/ ${video.id.videoId}`;
 
-    
-
 
     return (
         <div>

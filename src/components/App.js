@@ -11,16 +11,16 @@ class App extends React.Component {
     this.onMyInputSubmit('fashion')
   }
 
-  onMyInputSubmit = async myInput => {
+  onMyInputSubmit = async (myInput) => {
     const response = await Youtube.get("/search", {
       params: {
         q: myInput
-      }
+      },
     });
 
     this.setState({
       videos: response.data.items,
-      selectedVideo:response.data.items[0]
+      selectedVideo: response.data.items[0]
     });
   };
 
